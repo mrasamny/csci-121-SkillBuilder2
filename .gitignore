@@ -3,6 +3,6 @@
 /.idea/
 /.git/
 /gradle/
-/src/main/java/Solution*
+/solution/
 gradle*
 .DS_Store
