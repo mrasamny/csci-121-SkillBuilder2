@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,6 +16,7 @@ class PowerPillTest {
     }
 
     @Test
+    @DisplayName("[1] test getName")
     void getName() {
         for(int index = 0; index < color.length; index++) {
             String expected = color[index];
@@ -33,6 +35,7 @@ class PowerPillTest {
     }
 
     @Test
+    @DisplayName("[1] test getPower")
     void getPower() {
         for(int index = 0; index < 3; index++) {
             int expected = rand.nextInt();
@@ -43,6 +46,7 @@ class PowerPillTest {
     }
 
     @Test
+    @DisplayName("[1] test setPower")
     void setPower() {
         for(int index = 0; index < 3; index++) {
             int expected = rand.nextInt();
@@ -54,6 +58,7 @@ class PowerPillTest {
     }
 
     @Test
+    @DisplayName("[1] test setName")
     void setName() {
         for(int index = 0; index < color.length; index++) {
             String expected = color[index];

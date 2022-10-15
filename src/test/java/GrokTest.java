@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,6 +15,7 @@ class GrokTest {
     }
 
     @Test
+    @DisplayName("[1] test getPowerLevel")
     void getPowerLevel() {
         for(int count = 0; count < 3; count++){
             int expected = rand.nextInt(300);
@@ -24,6 +26,7 @@ class GrokTest {
     }
 
     @Test
+    @DisplayName("[1] test setPowerLevel")
     void setPowerLevel() {
         for(int count = 0; count < 3; count++){
             int expected = rand.nextInt(300);
@@ -35,6 +38,7 @@ class GrokTest {
     }
 
     @Test
+    @DisplayName("[2] test takePowerPill")
     void takePowerPill() {
         for(int index = 0; index < 3; index++){
             int power = rand.nextInt(200);
@@ -48,6 +52,7 @@ class GrokTest {
     }
 
     @Test
+    @DisplayName("[2] test tookHit")
     void tookHit() {
         int power = rand.nextInt(800)+10;
         int expected = (power % 5);
