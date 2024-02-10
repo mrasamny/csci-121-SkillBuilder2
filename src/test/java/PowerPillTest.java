@@ -92,7 +92,6 @@ class PowerPillTest {
             fp.setAccessible(true);
             assertEquals(10, fp.getInt(p), "In first value constructor: power is not initialized properly!");
         } catch (NoSuchFieldException | IllegalAccessException e){
-
             throw new RuntimeException(e);
         }
     }
