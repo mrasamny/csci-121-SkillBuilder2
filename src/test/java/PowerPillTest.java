@@ -88,6 +88,9 @@ class PowerPillTest {
             Field fp = p.getClass().getDeclaredField("name");
             fp.setAccessible(true);
             assertEquals(c, fp.get(p), "In first value constructor: name is not initialized properly!");
+            fp = p.getClass().getDeclaredField("power");
+            fp.setAccessible(true);
+            assertEquals(10, fp.getInt(p), "In first value constructor: name is not initialized properly!");
         } catch (NoSuchFieldException | IllegalAccessException e){
             throw new RuntimeException(e);
         }
